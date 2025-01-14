@@ -1,5 +1,5 @@
-# PHP_Reverse_Shell_Hack
-Gameplan for doing the PHP_Reverse_Shell_Hack
+# PenTesting
+Gameplan for doing PenTesting
 
 - DIscover your IP Address
 - Discover Target Machine's IP.
@@ -8,4 +8,15 @@ Gameplan for doing the PHP_Reverse_Shell_Hack
     - Check for /robots.txt
     - Check for login pages
     - Check for Vulnerabilities using Searchsploit
-    - 
+- Based on recon, determine or try these approaches:
+    - Brute forcing
+    - Remote Code Execution
+          - Check if the machine's website is vulnerable to this
+          - If so, check the level of access, if not root, proceed to reverse shell hack
+    - Reverse Shell Hack
+          - Use reverse shell generator online, generate a reverse shell code here or find a reverse shell code/cheat code
+          - Download the file in the target's machine
+          - Open listner, using NetCat
+          - start a python server on your machine
+          - Download the file on the target machine using wget
+          - Open the file
