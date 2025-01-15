@@ -20,3 +20,7 @@ Gameplan for doing PenTesting
           - start a python server on your machine
           - Download the file on the target machine using wget
           - Open the file
+      - Shells would usually be unstable
+          - To make it stable use: python3 -c 'import pty; pty.spawn ("/bin/bash")'
+          - Then use: export TERM=xterm
+          - Then use: stty raw -echo; fg
