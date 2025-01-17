@@ -23,4 +23,5 @@ Gameplan for doing PenTesting
       - Shells would usually be unstable
           - To make it stable use: python3 -c 'import pty; pty.spawn ("/bin/bash")'
           - Then use: export TERM=xterm
+          - Then use: CTRL + Z
           - Then use: stty raw -echo; fg
